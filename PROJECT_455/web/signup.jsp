@@ -42,7 +42,7 @@ to {transform: scale(1)}
 
 body{
 margin:0;
-background-image:url("https://www.mayoclinichealthsystem.org/-/media/national-files/images/hometown-health/2020/gloved-hands-filling-vaccine-syringe.jpg?h=370&w=660&la=en&hash=DA63DB7AE6B7883E75FAB09336687481");
+background-image:url("https://images.unsplash.com/photo-1626351545208-28c9080106ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
 background-repeat:no-repeat;
 background-size:cover;
 width:100%;
@@ -234,13 +234,14 @@ font-size:12px;
 <form action="Registration.jsp" method="POST" id="signup" class="animate" >
 <center>
 <h1>SIGN UP</h1>
-<input type="text" name="ID" placeholder="ID number*" required/>
+<input type="text" name="ID" placeholder="ID number*  (10 Digits)" required/>
 <input type="text" name="FirstName" placeholder="First name*" required/>
 <input type="text" name="LastName" placeholder="Last name*" required/>
 <input type="text" name="UserName" placeholder="User Name*" required/>
-<input type="email" name="Email" placeholder="Email*" required/>
-<input type="password" name="Password" placeholder="Password*(eight characters)" required/>
-<input type="text" name="PhoneNum" placeholder="Contact no*(05xxxxxxxx)" required/>
+<input type="email" name="Email"  placeholder="Email* (email@example.com)" required/>
+<input type="password" name="Password" placeholder="Password*" required/>
+<h6>At least 8 characters , Start with capital letter , at least one symbol</h6>
+<input type="text" name="PhoneNum" placeholder="Contact no* (05xxxxxxxx)" required/>
 <input type="submit" value="SignUp" name="Add" class="btn1">
 <section>
     <span><a href='login.jsp'> Already Registered?</a></span>

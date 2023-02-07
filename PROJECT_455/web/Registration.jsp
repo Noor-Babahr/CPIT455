@@ -3,6 +3,7 @@
     Created on : Jan 30, 2023, 10:02:32 PM
     Author     : noorbabahr
 --%>
+<%@ page import="java.sql.*" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,31 +14,44 @@
     <body>
         <h1>Hello World!</h1>
         
-                <%
-            //String id = request.getParameter("idBabahrTable");
+
+        <%
             String ID = request.getParameter("ID");
-            String FirstName = request.getParameter("FirstName");             
+            int id = Integer.parseInt(ID); 
+            if(ID!=null && ID.length()==10){
+            
+            String FirstName = request.getParameter("FirstName");
+            if(FirstName!=null && FirstName.matches("^[a-zA-Z]*$")) {
+            
             String LastName = request.getParameter("LastName");
+            if(LastName!=null && LastName.matches("^[a-zA-Z]*$")) {
+            
             String UserName = request.getParameter("UserName");
-            String Email = request.getParameter("Email");        
+            if(UserName!=null && UserName.matches("^[a-zA-Z]*$")) {
+            
+            String Email = request.getParameter("Email"); 
+            
             String Password = request.getParameter("Password");
-            String PhoneNum = request.getParameter("PhoneNum");
-            int id = Integer.parseInt(ID);            
+            if(Password!=null && Password.length()>=8){
+            
+            String PhoneNum = request.getParameter("PhoneNum");           
             int Phone = Integer.parseInt(PhoneNum);
+            if(PhoneNum!=null && PhoneNum.length()==10){
 
     
-            Group10_3DB.ConnectionDB con = new Group10_3DB.ConnectionDB();
-            //NConnectorDB.NoorDBConnection conNB = new NConnectorDB.NoorDBConnection();
-            int isAdded = con.AddEnfo(id, FirstName, LastName, UserName,Email, Password, Phone); 
+            Group10_3DB.ConnectionDB connn = new Group10_3DB.ConnectionDB();
+            int isAdded = connn.AddEnfo(id, FirstName, LastName,UserName,Email, Password, Phone); 
             
+           
             if(isAdded>0)       
-            response.sendRedirect("success.jsp");
+            response.sendRedirect("APPFORM.jsp");
             //out.print("Data is successfully inserted!");
-
+            
+            }}}}}
+            }
             else
             response.sendRedirect("error.jsp");
-            //out.print("Error"); 
-            //out.print("<a href='login.jsp'> login</a>");
         %>
+      
     </body>
 </html>

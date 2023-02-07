@@ -24,7 +24,7 @@
   width: auto;
   height: 100vh;
   
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.mayoclinichealthsystem.org/-/media/national-files/images/hometown-health/2020/gloved-hands-filling-vaccine-syringe.jpg?h=370&w=660&la=en&hash=DA63DB7AE6B7883E75FAB09336687481");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1581594549595-35f6edc7b762?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -132,7 +132,7 @@ button {
   <div class="Container">
         <div class="nav">
             <div class="logo">
-                LOGO
+                
             </div>
             <div class="menu">
                 <ul class="navMenu">
@@ -145,8 +145,8 @@ button {
             </div>
         </div>
         <div class="header">
-            <h1>The Spark Dimond</h1>
-            <p>New area / Future City</p>
+            <h1>Vaccine Center</h1>
+            <p></p>
             <button type="button">View Details</button>
         </div>
     </div>

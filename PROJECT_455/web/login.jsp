@@ -3,7 +3,7 @@
     Created on : Jan 30, 2023, 9:26:12 PM
     Author     : noorbabahr
 --%>
-
+<%@ page import="java.sql.*" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -44,7 +44,7 @@ to {transform: scale(1)}
 
 body{
 margin:0;
-background-image:url("https://www.onlinevacationcenter.com/img/ovc-building-3.jpg");
+background-image:url("https://images.unsplash.com/photo-1618015358954-344302f421a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80");
 background-repeat:no-repeat;
 background-size:cover;
 width:100%;
@@ -237,10 +237,11 @@ font-size:12px;
 <center>
 <h1>SIGN IN</h1>
 <input type="text" name="UserName" placeholder="UserName*" required/>
-<input type="text" name="Password" placeholder="Password*" required/>
+<input type="password" name="Password" placeholder="Password*" required/>
 <button class="btn1" type="submit">SignIn</button>
 <section>
-<span><a href="#">Forgot Password?</a></span>
+   
+<span><a href="ShowPersonalEnfo.jsp">Forgot Password?</a></span>
 <span><a href='signup.jsp'> Don't have an account?</a></span>
 </section>
 </center>
@@ -252,6 +253,6 @@ font-size:12px;
 
 
 
-<div class="credits">CREDITS: W3SCHOOLS, UNSPLASH.COM</div>
+<div class="credits"> </div>
     </body>
 </html>

@@ -70,12 +70,13 @@
 			<h1>Something Wrong!</h1>
 		</div>
 		<div>
-			Sorry, your password/ID/Email was incorrect . Please double-check your password .
+			Sorry,some thing was incorrect . Please double-check your information you entered .
                         
 		</div>
 		<div>
 		         try again 
-                        <a href='login.jsp'> login</a>
+                        <a href='login.jsp'> login ,</a>
+                        <a href='signup.jsp'> sign up</a>
 		</div>
 	</div>
 </body>

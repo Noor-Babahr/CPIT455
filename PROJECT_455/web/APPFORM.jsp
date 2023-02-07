@@ -180,7 +180,8 @@ html, body {
 body {
 	display: grid;
 	place-items: center;
-	background: #3284ce;
+        background-image:url("https://images.unsplash.com/photo-1618015358954-344302f421a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80");
+	
 	margin: 0;
 	padding: 0 1.5rem;
 }
@@ -357,17 +358,17 @@ input:focus ~ label {
 			<header class="signup-header">
 				<h2>Book Appointment</h2>
                         <p>
-				Reschdual the appointment? <a href="#">Login here</a>
+				Reschdual appointment?<a href="#">Reschdual</a>
 			</p>
                         <p>
-				Cancel the appointment? <a href="#">Login here</a>
+				Cancel appointment?<a href="ShowMyAppointment.jsp">Cancel</a>
 			</p>
-				<h3>fill the form please</h3>
+				 <h3>fill the form please</h3>
 			</header>
 			<form action="APP.jsp" class="form">
 				<div class="input-group">
-					<input type="text" name="UserName" required>
-					<label>User Name</label>
+					<input type="email" name="Email" placeholder="          email@example.com"required>
+					<label>Email</label>
 					<img src="images/icon-accounts.svg">
 				</div>
 				<div class="input-group">
@@ -385,7 +386,6 @@ input:focus ~ label {
 					<label>Vaccine Type</label>
 					<img src="images/icon-lock.svg">
 				</div>
-				<h4>At least 8 character</h4>
                                        
                                 
                       <%--  <input type="submit" value="BOOK" name="Add" class="btn1">   --%>

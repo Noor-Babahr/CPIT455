@@ -107,6 +107,8 @@ i {
     <p>Appointment confirmed. We'll see you soon!</p>
     
     <button>Ok</button>
+    <p>                       </p>
+    <button><a href='ShowMyAppointment.jsp'> Display Appointment Details</a></button>
     
     
     

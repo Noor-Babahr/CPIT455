@@ -15,21 +15,23 @@
        
         <%
 
-            String UserName = request.getParameter("UserName");
+            String Email = request.getParameter("Email");
             String Date = request.getParameter("Date");
             String Time = request.getParameter("Time");
             String VaccineType = request.getParameter("VaccineType");
   
             Group10_3DB.ConnectionDB con = new Group10_3DB.ConnectionDB();
-            int isAdded = con.AddInfoAppointment(UserName, Date, Time ,VaccineType); 
+            int isAdded = con.AddInfoAppointment(Email, Date, Time ,VaccineType); 
             
             if(isAdded>0) 
             response.sendRedirect("success.jsp");
-            //out.print("Data is successfully inserted!");
+             
+            //response.sendRedirect("ShowMyAppointment.jsp");
+
             else
             response.sendRedirect("error.jsp");
-            //out.print("Error");     
-            //out.print("<a href='error.jsp'> error</a>");
+ 
+ 
         %>
     </body>
 </html>

@@ -16,29 +16,26 @@
 </head>
     <body>
     
-        <h1> user Information in database!</h1>
+        <h1> </h1>
        <%
             String UserName = request.getParameter("UserName");
             String Password = request.getParameter("Password");
             
-            if(UserName!=null) {
-            if(Password!=null ){
+            if(UserName!=null && UserName.matches("^[a-zA-Z]*$")) {
+            if(Password!=null && Password.length()>=8){
             Group10_3DB.ConnectionDB conn = new Group10_3DB.ConnectionDB();
             ResultSet isExist = conn.userExist(UserName, Password); 
    
            if (isExist.next()){
            response.sendRedirect("APPFORM.jsp");
-              //out.print("Welcome "+UserName);
-               //response.sendRedirect("ShowInfo.jsp");
+           
               }else{
-          //out.print("Sorry "+UserName+" you are not an authorized user");
           response.sendRedirect("error.jsp");
 }
             }
             }else{
-            response.sendRedirect("error.jsp");
-           //out.print("Please enter correct data");
-           //out.print("<a href='LoginForm.jsp'> login</a>");
+           response.sendRedirect("error.jsp");
+
            }
             %>
     </body>
